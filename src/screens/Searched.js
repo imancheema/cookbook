@@ -33,13 +33,16 @@ function Searched() {
   //strCateogry: show the category of what the food belongs to
   return (
     <div>
+      <header class='search-header'>{params.term}
+      <button onClick={()=>navigate(-1)} class='return-button'></button>
+      </header>
       <div class='searched-body'>
         <div class='searched-container'>
           {searchedRecipe.map((item) => {
             return(
               <div class='card' key={item.idMeal}>
                 <div class='card-header'>
-                  <img src={item.strMealThumb}></img>
+                  <img src={item.strMealThumb} alt=""></img>
                 </div>
 
                 <div class='card-body'>
