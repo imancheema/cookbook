@@ -41,15 +41,11 @@ function Searched() {
   //h1 says the name of the meal
   //strCateogry: show the category of what the food belongs to
   return (
-
     <div>
-
     <div id='request-null' class='hidden centered landing-title'>
       no recipe found
     </div>
-
     <div id='request-exists' class='hidden'>
-
       <header class='search-header'>{params.term}
       <button onClick={()=>navigate(-1)} class='return-button'>Back</button>
       </header>
@@ -66,7 +62,6 @@ function Searched() {
                   <p>Meal Category: {item.strCategory}</p>
                   <p>Meal Area: {item.strArea}</p>
                   <p>Meal Tags: {item.strTags}</p>
-
                   <div class='tag-container'>
                     <a class='tag' target='_blank' rel='noreferrer' href={item.strSource}>Recipe</a>
                     <a class='tag' target='_blank' rel='noreferrer' href={item.strYoutube}>Tutorial</a>

@@ -1,14 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500;600;700;800;900&family=Baskervville&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500;600;700;800;900&family=Baskervville&family=Josefin+Sans:wght@300;400;500;600;700&family=Rozha+One&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
 
 /* LANDING PAGE */
+body{
+    font-family: 'Shippori Mincho', serif;
+    text-align: center;   
+}
 
+h1{
+    font-family: 'Shippori Mincho', serif;
+    letter-spacing: 5px;;
+    font-size: 55px;
+    color: rgb(61, 32, 32); 
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 800;
+}
 
+h2{
+    font-family: 'Shippori Mincho', serif;
+    color: rgb(61, 32, 32); 
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: none;
+    padding-bottom: 10px;
+}
 
+.landing-body{
+    background-image:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
+.centered{ 
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%
+}
 
+.search-input{
+    width: 600px;
+    padding: 12px 20px;
+    background-color: rgba(243, 238, 238, 0.9);
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 55px;
+    border: 2px solid rgb(61, 32, 32);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    text-transform: lowercase;
+    letter-spacing: 1.5px;
+    backface-visibility: hidden;
+}
+
+.submit-btn{
+    display: none;
+}
 
 
 /* SEARCHED PAGE */
