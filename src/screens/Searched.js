@@ -19,7 +19,16 @@ function Searched() {
       axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=' + params.term) //everything after receipe is term (what person searches for)
       .then(function (respone) {
         console.log(respone.data.meals)
-        setSearchedRecipe(respone.data.meals)
+        setSearchedRecipe(respone.data.meals) //this is the api call 
+        if(respone.data.meals == null){ //if the request doesnt exist
+          setSearchedRecipe([]);
+          const nullDisplay = document.getElementById('request-null')
+          nullDisplay.classList.remove("hidden")
+        } 
+        else{
+          const showDisplay = document.getElementById("request-exists")
+          showDisplay.classList.remove("hidden");
+        }
       })
       .catch(function (error){
         console.log(error)
@@ -32,9 +41,17 @@ function Searched() {
   //h1 says the name of the meal
   //strCateogry: show the category of what the food belongs to
   return (
+
     <div>
+
+    <div id='request-null' class='hidden centered landing-title'>
+      no recipe found
+    </div>
+
+    <div id='request-exists' class='hidden'>
+
       <header class='search-header'>{params.term}
-      <button onClick={()=>navigate(-1)} class='return-button'></button>
+      <button onClick={()=>navigate(-1)} class='return-button'>Back</button>
       </header>
       <div class='searched-body'>
         <div class='searched-container'>
@@ -44,7 +61,6 @@ function Searched() {
                 <div class='card-header'>
                   <img src={item.strMealThumb} alt=""></img>
                 </div>
-
                 <div class='card-body'>
                   <h1>{item.strMeal}</h1>
                   <p>Meal Category: {item.strCategory}</p>
@@ -60,6 +76,7 @@ function Searched() {
             )
           })}
         </div>
+      </div>
       </div>
     </div>
   )
