@@ -1,6 +1,8 @@
 import './App.css';
 import Landing from './screens/Landing';
-import Searched from './screens/Searched'
+import Searched from './screens/Searched';
+import NotFound from './screens/NotFound';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +17,7 @@ function App() {
           //the route renders some UI - or screen - when its path matches the current url
           <Route path='/' element={<Landing/>}/> //landing screen
           <Route path='/recipe/:term' element={<Searched/>}/> //search screen - colon term is placeholder and any word can go there
+          <Route path="*" element={<NotFound/>}/>
           </Routes>
       </div>
     </Router>
