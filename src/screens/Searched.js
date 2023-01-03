@@ -43,7 +43,8 @@ function Searched() {
   return (
     <div>
     <div id='request-null' class='hidden centered landing-title'>
-      no recipe found
+      <h2>No recipe found.</h2>
+      <p1>Try searching fish, apple, beef, or some other ingredient</p1>
     </div>
     <div id='request-exists' class='hidden'>
       <header class='search-header'>{params.term}
@@ -58,7 +59,7 @@ function Searched() {
                   <img src={item.strMealThumb} alt=""></img>
                 </div>
                 <div class='card-body'>
-                  <h1>{item.strMeal}</h1>
+                  <h2>{item.strMeal}</h2>
                   <p>Meal Category: {item.strCategory}</p>
                   <p>Meal Area: {item.strArea}</p>
                   <p>Meal Tags: {item.strTags}</p>

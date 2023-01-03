@@ -5,13 +5,13 @@
 /* LANDING PAGE */
 body{
     font-family: 'Shippori Mincho', serif;
-    text-align: center;   
+    text-align: center;  
 }
 
 h1{
     font-family: 'Shippori Mincho', serif;
     letter-spacing: 5px;;
-    font-size: 55px;
+    font-size: 60px;
     color: rgb(61, 32, 32); 
     margin-top: 0;
     margin-bottom: 0;
@@ -22,18 +22,29 @@ h2{
     font-family: 'Shippori Mincho', serif;
     color: rgb(61, 32, 32); 
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: none;
     padding-bottom: 10px;
 }
 
+p{
+    font-size: 16px;
+}
+
 .landing-body{
+    /* background-image:url(https://images.pexels.com/photos/616404/pexels-photo-616404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+
+    /* background-image:url(https://images.pexels.com/photos/616409/pexels-photo-616409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+
     background-image:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
     height: 100vh; 
+    background-color: rgb(241, 239, 231);;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
+
 }
+
 
 .centered{ 
     margin-top: -100px;
@@ -44,13 +55,12 @@ h2{
 }
 
 .search-input{
-    width: 600px;
+    width: 350px;
     padding: 12px 20px;
-    background-color: rgba(243, 238, 238, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     font-family: 'Shippori Mincho', serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
     border-radius: 55px;
     border: 2px solid rgb(61, 32, 32);
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E ");
@@ -68,15 +78,109 @@ h2{
 
 
 /* SEARCHED PAGE */
+.hidden{
+    display: none;
+}
 
+.search-header{
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    font-family: 'Shippori Mincho', serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(61, 32, 32);
+}
 
+.return-button{
+    background-color: rgb(186, 238, 117);
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 18px;
+    position: fixed;
+    top: 1;
+    left: 0;
+    font-family: 'Shippori Mincho', serif;
+    letter-spacing: 2px;
+    color: rgb(61, 32, 32); 
+    font-weight: 800;
+}
 
+.return-button:hover{
+    border: 1px solid black;
+}
 
+.searched-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(241, 239, 231);
+    /* background-color: rgb(214, 220, 220); */
+    font-family: 'Shippori Mincho', serif;
+    box-sizing: border-box;
+}
 
+.searched-container{
+    display: flex;
+    width: 1050px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
 
+.card{
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 300px;
+}
 
+.card-header img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
 
+.card-body p{
+    font-size: 13px;
+    margin: 0 0 15px;
+}
+
+.tag{
+    background-color: rgb(186, 238, 117);
+    border-radius: 50px;
+    font-size: 12px;
+    color: black;
+    padding: 6px 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.simple-p1{
+    font-family: 'Shippori Mincho', serif;
+    letter-spacing: 2px;
+    color: rgb(61, 32, 32); 
+    font-weight: 800;
+}
 
 
 /* clears the ‘X’ from Chrome */

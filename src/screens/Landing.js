@@ -19,7 +19,7 @@ function Landing() {
   return (
     <div class='landing-body'>
       <div class='centered'>
-        <h1>cookbook 📖</h1>
+        <h1>cookbook📖</h1>
         <h2>Find new and creative ways to use up ingredients and discover new dishes to try✨</h2>
         <form> 
           <input onChange={(event) => {setRecipe(event.target.value)}}class = 'search-input' type='search' placeholder='Enter an ingredient'></input> 
